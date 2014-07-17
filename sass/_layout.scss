@@ -1,0 +1,101 @@
+// _layout.scss
+@import "breakpoint";
+
+// breakpoint settings  
+$small: 320px; 
+$medium: 600px;
+$large: 1024px; 
+
+// susy -------------------------------------------------------
+$susy:(
+	// how many columns 
+	columns:12,
+	// percentage of the gutters
+	gutters: 1/4,
+	// static or fluid
+	math: fluid,
+	// output is set to float by default
+	output: float,
+	// gutter position: left right or 
+	// split use margin
+	// inside use padding 
+	gutter-position: split,
+	);
+	
+// body  -------------------------------------------------------
+// this include tells the max width of the body of the document
+body{@include container(1200px);}
+
+// breakpoint small -------------------------------------------------------
+@include susy-breakpoint($small, 12){
+	
+	// header  -------------------------------------------------------
+	header{@include span(12);}
+
+	// main-content  -------------------------------------------------------
+	#main-content {@include span(12);}
+
+	// sidebar -------------------------------------------------------
+	#sidebar{@include span(12);}
+
+	// footer  -------------------------------------------------------
+	footer{@include span(12);}
+}
+
+// breakpoint medium -------------------------------------------------------
+@include susy-breakpoint($medium, 12){
+	@include layout(12);
+	
+	// header  -------------------------------------------------------
+	header{@include span(12);}
+
+	// main-content  -------------------------------------------------------
+	#main-content {@include span(6);}
+
+	// sidebar -------------------------------------------------------
+	#sidebar{@include span(6);}
+
+	// footer  -------------------------------------------------------
+	footer{@include span(12);}
+}
+
+// breakpoint large -------------------------------------------------------
+@include susy-breakpoint($large, 12){
+	@include layout(12);
+	
+	// header  -------------------------------------------------------
+	header{@include span(12);}
+
+	// main-content  -------------------------------------------------------
+	#main-content {@include span(8);}
+
+	// sidebar -------------------------------------------------------
+	#sidebar{@include span(4 at 9);}
+
+	// footer  -------------------------------------------------------
+	footer{@include span(12);}
+}
+
+// Gallery -------------------------------------------------------
+.gallery img{
+	@include gallery(8 of 12);
+	
+		@include breakpoint($small){
+		@include gallery(12 of 12);
+		}
+
+		@include breakpoint($medium){
+		@include gallery(4 of 12);
+		}
+
+		@include breakpoint($large){
+		@include gallery(3 of 12);
+		}
+
+}
+
+
+
+
+
+

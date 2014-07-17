@@ -1,0 +1,625 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 27, ../sass/_layout.scss */
+body {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+@media (min-width: 320px) {
+  /* line 33, ../sass/_layout.scss */
+  header {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 36, ../sass/_layout.scss */
+  #main-content {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 39, ../sass/_layout.scss */
+  #sidebar {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 42, ../sass/_layout.scss */
+  footer {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+@media (min-width: 600px) {
+  /* line 50, ../sass/_layout.scss */
+  header {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 53, ../sass/_layout.scss */
+  #main-content {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 56, ../sass/_layout.scss */
+  #sidebar {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 59, ../sass/_layout.scss */
+  footer {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+@media (min-width: 1024px) {
+  /* line 67, ../sass/_layout.scss */
+  header {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 70, ../sass/_layout.scss */
+  #main-content {
+    width: 65%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 73, ../sass/_layout.scss */
+  #sidebar {
+    width: 31.66667%;
+    float: right;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  /* line 76, ../sass/_layout.scss */
+  footer {
+    width: 98.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+/* line 80, ../sass/_layout.scss */
+.gallery img {
+  width: 65%;
+  float: left; }
+  /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+  .gallery img:nth-child(1n + 1) {
+    margin-left: 0.83333%;
+    margin-right: -100%;
+    clear: both; }
+  @media (min-width: 320px) {
+    /* line 80, ../sass/_layout.scss */
+    .gallery img {
+      width: 98.33333%;
+      float: left; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(1n + 1) {
+        margin-left: 0.83333%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 600px) {
+    /* line 80, ../sass/_layout.scss */
+    .gallery img {
+      width: 31.66667%;
+      float: left; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(3n + 1) {
+        margin-left: 0.83333%;
+        margin-right: -100%;
+        clear: both; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(3n + 2) {
+        margin-left: 34.16667%;
+        margin-right: -100%;
+        clear: none; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(3n + 3) {
+        margin-left: 67.5%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 1024px) {
+    /* line 80, ../sass/_layout.scss */
+    .gallery img {
+      width: 23.33333%;
+      float: left; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(4n + 1) {
+        margin-left: 0.83333%;
+        margin-right: -100%;
+        clear: both; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(4n + 2) {
+        margin-left: 25.83333%;
+        margin-right: -100%;
+        clear: none; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(4n + 3) {
+        margin-left: 50.83333%;
+        margin-right: -100%;
+        clear: none; }
+      /* line 63, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
+      .gallery img:nth-child(4n + 4) {
+        margin-left: 75.83333%;
+        margin-right: -100%;
+        clear: none; } }
+
+/*
+INDEX 
+----------------------------
+//@FONT-FACE ...............................
+
+//BORDERS ...............................
+$default-rhythm-border-style
+.border-radius
+.border-rhythm
+
+//SHADOWS ...............................
+.box-shadow
+
+//TRANSITIONS ...............................
+.transition
+
+//LINK SETTINGS ...............................
+.horz-list
+@include link-colors
+.unstyled
+
+//OPACITY SETTINGS ...............................
+.opacity-10
+.opacity-20
+.opacity-50 
+.opacity-70 
+
+
+//Typography ...............................
+$base-font-size
+$base-line-height
+@include establish-baseline
+.leader
+.trailer
+.trailer-border
+.large-text
+.hide-text
+.squish-text
+.contrasted
+.wrap
+
+//SOCIAL ICONS ...............................
+.social-links
+$social-spacing
+$social-facebook
+$social-layout: smart
+
+
+
+//SPRITES ...............................
+@import "social/*.png"
+@include all-social-sprites;
+.facebook
+
+//COLUMNS ...............................
+.two-column
+.three-column
+.four-column
+.four-column-with-rule
+
+//GRADIENTS ...............................
+.radial-gradient
+.linear-gradient
+.v-gradient
+.v-gradient-2
+.v-gradient-3
+.h-gradient
+.svg-gradient 
+
+
+
+
+*/
+@font-face {
+  font-family: "chunkyfive";
+  src: url('../fonts/fonts/chunkyfile-webfont.ttf') format('truetype'), url('../fonts/chunkyfile-webfont.woff') format('woff'), url('../fonts/chunkyfile-webfont.ttf') format('truetype'), url('../fonts/chunkyfile-webfont.svg') format('svg'), url('../fonts/chunkyfile-webfont.eot') format('embedded-opentype'); }
+/* line 96, ../sass/_compass-mixins.scss */
+.border-radius {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+/* line 99, ../sass/_compass-mixins.scss */
+.border-rhythm {
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: 1.4375em; }
+
+/* line 106, ../sass/_compass-mixins.scss */
+.box-shadow {
+  -moz-box-shadow: 0px 5px #333333;
+  -webkit-box-shadow: 0px 5px #333333;
+  box-shadow: 0px 5px #333333; }
+
+/* line 113, ../sass/_compass-mixins.scss */
+.transition {
+  color: black;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in; }
+  /* line 118, ../sass/_compass-mixins.scss */
+  .transition:hover {
+    background: white; }
+
+/* line 125, ../sass/_compass-mixins.scss */
+ul.horz-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 62, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  ul.horz-list li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px; }
+    /* line 49, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    ul.horz-list li:first-child {
+      padding-left: 0; }
+    /* line 50, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    ul.horz-list li:last-child {
+      padding-right: 0; }
+    /* line 52, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    ul.horz-list li.last {
+      padding-right: 0; }
+
+/* line 127, ../sass/_compass-mixins.scss */
+a {
+  color: black;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  color: black; }
+  /* line 18, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_link-colors.scss */
+  a:visited {
+    color: black; }
+  /* line 21, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_link-colors.scss */
+  a:focus {
+    color: black -10; }
+  /* line 24, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_link-colors.scss */
+  a:hover {
+    color: blue; }
+  /* line 27, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_link-colors.scss */
+  a:active {
+    color: blue -50; }
+
+/* line 138, ../sass/_compass-mixins.scss */
+.unstyled a {
+  color: black;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  text-decoration: none; }
+  /* line 6, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_unstyled-link.scss */
+  .unstyled a:active, .unstyled a:focus {
+    outline: none; }
+  /* line 4, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/links/_hover-link.scss */
+  .unstyled a:hover, .unstyled a:focus {
+    text-decoration: underline; }
+
+/* line 150, ../sass/_compass-mixins.scss */
+.opacity-10 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1; }
+
+/* line 151, ../sass/_compass-mixins.scss */
+.opacity-20 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2; }
+
+/* line 152, ../sass/_compass-mixins.scss */
+.opacity-50 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }
+
+/* line 153, ../sass/_compass-mixins.scss */
+.opacity-70 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7; }
+
+/* line 106, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em; }
+
+/* line 170, ../sass/_compass-mixins.scss */
+.leader {
+  margin-top: 1.5em; }
+
+/* line 174, ../sass/_compass-mixins.scss */
+.trailer {
+  margin-bottom: 1.5em; }
+
+/* line 177, ../sass/_compass-mixins.scss */
+.trailer-border {
+  margin-bottom: 1.5em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 1.4375em; }
+
+/* line 180, ../sass/_compass-mixins.scss */
+.large-text {
+  font-size: 1.25em;
+  line-height: 1.2em; }
+
+/* line 184, ../sass/_compass-mixins.scss */
+.hide-text {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize; }
+
+/* line 187, ../sass/_compass-mixins.scss */
+.squish-text {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent; }
+
+/* line 190, ../sass/_compass-mixins.scss */
+.contrasted {
+  background-color: black;
+  color: white; }
+
+/* line 193, ../sass/_compass-mixins.scss */
+.wrap {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word; }
+
+/* line 200, ../sass/_compass-mixins.scss */
+ul.social-links li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 62, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  ul.social-links li li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px; }
+    /* line 49, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    ul.social-links li li:first-child {
+      padding-left: 0; }
+    /* line 50, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    ul.social-links li li:last-child {
+      padding-right: 0; }
+    /* line 52, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    ul.social-links li li.last {
+      padding-right: 0; }
+
+/* line 201, ../sass/_compass-mixins.scss */
+ul.social-links li {
+  list-style: none; }
+  /* line 203, ../sass/_compass-mixins.scss */
+  ul.social-links li a {
+    display: block;
+    width: 30px;
+    height: 30px; }
+
+/* line 80, social/*.png */
+.social-sprite, .social-facebook_1, .social-facebook_2_hover, .social-facebook_3, .social-facebook_4, .social-facebook_5, .facebook {
+  background-image: url('../images/social-sb9cdec69eb.png');
+  background-repeat: no-repeat; }
+
+/* line 84, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook_1 {
+  background-position: 0 -256px; }
+
+/* line 84, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook_2_hover {
+  background-position: -128px -128px; }
+
+/* line 84, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook_3 {
+  background-position: -64px -128px; }
+
+/* line 84, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook_4 {
+  background-position: 0 -128px; }
+
+/* line 84, ../../../../Downloads/CodeKit 2.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook_5 {
+  background-position: 0 0; }
+
+/* line 238, ../sass/_compass-mixins.scss */
+.facebook {
+  background-position: 0 -128px; }
+
+/* line 245, ../sass/_compass-mixins.scss */
+.two-column {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2; }
+
+/* line 246, ../sass/_compass-mixins.scss */
+.three-column {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3; }
+
+/* line 247, ../sass/_compass-mixins.scss */
+.four-column {
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4; }
+
+/* line 249, ../sass/_compass-mixins.scss */
+.four-column-with-rule {
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+  -moz-column-rule: 1px solid #ededed;
+  -webkit-column-rule: 1px solid #ededed;
+  column-rule: 1px solid #ededed; }
+
+/* line 261, ../sass/_compass-mixins.scss */
+.radial-gradient {
+  background-image: -moz-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
+  background-image: -webkit-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
+  background-image: radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px); }
+
+/* line 266, ../sass/_compass-mixins.scss */
+.linear-gradient {
+  background-image: -moz-linear-gradient(left top, #ffffff, #dddddd);
+  background-image: -webkit-linear-gradient(left top, #ffffff, #dddddd);
+  background-image: linear-gradient(to right bottom, #ffffff, #dddddd); }
+
+/* line 271, ../sass/_compass-mixins.scss */
+.v-gradient {
+  background-image: -moz-linear-gradient(#ffffff, #aaaaaa);
+  background-image: -webkit-linear-gradient(#ffffff, #aaaaaa);
+  background-image: linear-gradient(#ffffff, #aaaaaa); }
+
+/* line 276, ../sass/_compass-mixins.scss */
+.v-gradient-2 {
+  background-image: -moz-linear-gradient(#ffffff, #cccccc, #aaaaaa);
+  background-image: -webkit-linear-gradient(#ffffff, #cccccc, #aaaaaa);
+  background-image: linear-gradient(#ffffff, #cccccc, #aaaaaa); }
+
+/* line 281, ../sass/_compass-mixins.scss */
+.v-gradient-3 {
+  background-image: -moz-linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa);
+  background-image: -webkit-linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa);
+  background-image: linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa); }
+
+/* line 286, ../sass/_compass-mixins.scss */
+.h-gradient {
+  background-image: -moz-linear-gradient(left, #ffffff, #dddddd);
+  background-image: -webkit-linear-gradient(left, #ffffff, #dddddd);
+  background-image: linear-gradient(to right, #ffffff, #dddddd); }
+
+/* line 290, ../sass/_compass-mixins.scss */
+.svg-gradient {
+  background-image: -moz-linear-gradient(left, #2ac363, #cd8c14, #9c4cc2);
+  background-image: -webkit-linear-gradient(left, #2ac363, #cd8c14, #9c4cc2);
+  background-image: linear-gradient(to right, #2ac363, #cd8c14, #9c4cc2);
+  width: 80px;
+  height: 80px; }
+
+/* line 5, ../sass/_mystyles.scss */
+body {
+  background-color: #ededed;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/* line 11, ../sass/_mystyles.scss */
+header, #main-content, #sidebar, footer {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/* line 15, ../sass/_mystyles.scss */
+#main-content {
+  color: blue; }

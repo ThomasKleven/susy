@@ -1,0 +1,15 @@
+// _mystyles.scss
+
+
+//body
+body {
+	background-color: $background;
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom;
+}
+
+ header, #main-content, #sidebar, footer{margin-top: $margin-top;
+	margin-bottom: $margin-bottom;}
+
+
+#main-content{color: $blue;}

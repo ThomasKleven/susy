@@ -1,0 +1,295 @@
+// _compass-mixins
+@import "compass";
+
+/*
+INDEX 
+----------------------------
+//@FONT-FACE ...............................
+
+//BORDERS ...............................
+$default-rhythm-border-style
+.border-radius
+.border-rhythm
+
+//SHADOWS ...............................
+.box-shadow
+
+//TRANSITIONS ...............................
+.transition
+
+//LINK SETTINGS ...............................
+.horz-list
+@include link-colors
+.unstyled
+
+//OPACITY SETTINGS ...............................
+.opacity-10
+.opacity-20
+.opacity-50 
+.opacity-70 
+
+
+//Typography ...............................
+$base-font-size
+$base-line-height
+@include establish-baseline
+.leader
+.trailer
+.trailer-border
+.large-text
+.hide-text
+.squish-text
+.contrasted
+.wrap
+
+//SOCIAL ICONS ...............................
+.social-links
+$social-spacing
+$social-facebook
+$social-layout: smart
+
+
+
+//SPRITES ...............................
+@import "social/*.png"
+@include all-social-sprites;
+.facebook
+
+//COLUMNS ...............................
+.two-column
+.three-column
+.four-column
+.four-column-with-rule
+
+//GRADIENTS ...............................
+.radial-gradient
+.linear-gradient
+.v-gradient
+.v-gradient-2
+.v-gradient-3
+.h-gradient
+.svg-gradient 
+
+
+
+
+*/
+
+
+
+
+
+// @FONT-FACE ------------------------------------------------------------------------ .icon {
+// REMEMBER: to use this we must put our font files in the css 
+// file by default you can changes this but need to look it up on the COMPASS site 
+@include font-face("chunkyfive" , font-files("fonts/chunkyfile-webfont.ttf" , "chunkyfile-webfont.woff" , "chunkyfile-webfont.ttf" , "chunkyfile-webfont.svg" , "chunkyfile-webfont.eot"));
+
+
+
+
+
+// BORDERS ------------------------------------------------------------------------
+
+// solid dashed dotted double groove ridge inset outset
+$default-rhythm-border-style: solid;
+
+.border-radius{@include border-radius(10px);}
+
+// you can change the border value (20px)
+.border-rhythm{@include rhythm-borders();}
+
+
+
+
+
+// SHADOWS ------------------------------------------------------------------------
+.box-shadow {@include single-box-shadow;}
+
+
+
+
+
+// TRANSITIONS ------------------------------------------------------------------------
+.transition{
+color:$black; 
+@include transition-property(all);
+@include transition-duration(.2s);
+@include transition-timing-function(ease-in);
+&:hover{background:white;}
+}
+
+
+
+
+// LINK SETTINGS ------------------------------------------------------------------------
+ul.horz-list{@include horizontal-list;}
+
+a{
+color:$black; 
+@include transition-property(all);
+@include transition-duration(.2s);
+@include transition-timing-function(ease-in);
+// normal , hover , active , visited , focus
+@include link-colors($black, $blue, $blue -50, $black, $black -10);
+//&:hover{background:white;}
+}
+
+// add class to ul
+.unstyled a{ 
+  color:$black;
+   @include unstyled-link();
+   // adds a line underneath in hover state
+   @include hover-link;
+}
+
+
+
+
+
+// OPACITY SETTINGS ------------------------------------------------------------------------
+.opacity-10 {@include opacity(0.1);}
+.opacity-20 {@include opacity(0.2);}
+.opacity-50 {@include opacity(0.5);}
+.opacity-70 {@include opacity(0.7);}
+
+
+
+
+
+// Typography ------------------------------------------------------------------------
+$base-font-size: 16px;
+
+$base-line-height: 24px;
+
+@include establish-baseline;
+
+//LARGE TEXT
+
+// padding-leader or margin-leader 
+// REMEMBER: when you put a value in the () it will times it by the amount of the set calculation for the line height
+.leader{@include leader();}
+
+// REMEMBER: when you put a value in the () it will times it by the amount of the set calculation for the line height
+// padding-trailer or margin-trailer 
+.trailer{@include trailer();}
+
+// padding-trailer or margin-trailer border is included with this rule
+.trailer-border{@include trailer(); @include trailing-border;}
+
+// adjusts line height automatically
+.large-text{  @include adjust-font-size-to(20px);}
+
+//DISPLAY HIDE
+// this rule will hide the text on display and from screen readers
+.hide-text{@include hide-text;}
+
+// this rule will hide the text on display but not screen readers
+.squish-text{@include squish-text;}
+
+//contrasted sets the font-color automatically 
+.contrasted{@include contrasted($black)};
+
+// forces wrap of text
+.wrap{@include force-wrap;}
+
+
+
+// SOCIAL ICONS ------------------------------------------------------------------------ .icon {
+ 
+ // @include replace-text-with-dimensions("");
+ ul.social-links li{@include horizontal-list;}
+ ul.social-links li{
+   list-style:none;
+   a{display:block; width:30px; height:30px;}
+ }
+
+
+  // sets all the margins for all social icons in sprite file
+  $social-spacing:20px;
+  
+  // targets just the icon that is targeted in sprite file
+  $social-facebook_1-spacing:200px;
+  
+
+  // social icons layout  (you can use horizontal diagonal or smart)
+  $social-layout: smart;
+  
+  // HOVER STATE
+  // to make a hover state for the sprite just add the following to the image extension 
+  
+  // og file name
+  // facebook.png
+ 
+ // hover state file name
+ // facebook_hover.png
+
+
+
+
+
+// SPRITES ------------------------------------------------------------------------
+// look in social folder for all .png files and make a sprite file
+@import "social/*.png";
+
+// include all social sprites in the file name social change name if needed
+@include all-social-sprites;
+
+// this is how you target just one icon
+.facebook{ @include social-sprite(facebook_4);}
+
+
+
+
+
+// COLUMNS ------------------------------------------------------------------------
+.two-column {@include column-count(2);}
+.three-column {@include column-count(3);}
+.four-column {@include column-count(4);}
+ 
+ .four-column-with-rule {
+  @include column-count(4);
+  @include column-rule(1px, solid, $background);
+}
+
+
+
+
+
+// GRADIENTS ------------------------------------------------------------------------
+
+// This will yield a radial gradient with an apparent specular highlight
+.radial-gradient {
+  @include background-image(radial-gradient(45px 45px, cyan 10px, dodgerblue 30px));
+}
+ 
+// This yields a linear gradient spanning from the upper left corner to the lower right corner
+.linear-gradient {
+  @include background-image(linear-gradient(left top, white, #dddddd));
+}
+ 
+// This yields a gradient starting at the top with #fff, ending in #aaa
+.v-gradient {
+  @include background-image(linear-gradient(white, #aaaaaa));
+}
+ 
+// Same as above but with a #ccc at the halfway point
+.v-gradient-2 {
+  @include background-image(linear-gradient(white, #cccccc, #aaaaaa));
+}
+ 
+// Same as the first example but with #ccc at the 30% from the top, and #bbb at 70% from the top
+.v-gradient-3 {
+  @include background-image(linear-gradient(white, #cccccc 30%, #bbbbbb 70%, #aaaaaa));
+}
+ 
+// This yields a horizontal linear gradient spanning from left to right.
+.h-gradient {
+  @include background-image(linear-gradient(left, white, #dddddd));
+}
+ 
+.svg-gradient {
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(left, #2ac363, #cd8c14, #9c4cc2));
+  width: 80px;
+  height: 80px;
+}
