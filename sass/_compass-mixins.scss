@@ -82,7 +82,7 @@ $social-layout: smart
 // @FONT-FACE ------------------------------------------------------------------------ .icon {
 // REMEMBER: to use this we must put our font files in the css 
 // file by default you can changes this but need to look it up on the COMPASS site 
-@include font-face("chunkyfive" , font-files("fonts/chunkyfile-webfont.ttf" , "chunkyfile-webfont.woff" , "chunkyfile-webfont.ttf" , "chunkyfile-webfont.svg" , "chunkyfile-webfont.eot"));
+//@include font-face("chunkyfive" , font-files("fonts/chunkyfile-webfont.ttf" , "chunkyfile-webfont.woff" , "chunkyfile-webfont.ttf" , "chunkyfile-webfont.svg" , "chunkyfile-webfont.eot"));
 
 
 
@@ -161,6 +161,7 @@ $base-font-size: 16px;
 
 $base-line-height: 24px;
 
+// this will calculate the golden ratio for you using the styles above as an reference
 @include establish-baseline;
 
 //LARGE TEXT
@@ -203,8 +204,14 @@ $base-line-height: 24px;
    a{display:block; width:30px; height:30px;}
  }
 
+// sets a height fix for the icons
+// for this to work put a link for the image in the ("") position
+.icon-fix{
+  @include replace-text-with-dimensions("social/facebook_1.png");
+  display:block;
+  }
 
-  // sets all the margins for all social icons in sprite file
+ // sets all the margins for all social icons in sprite file
   $social-spacing:20px;
   
   // targets just the icon that is targeted in sprite file

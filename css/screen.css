@@ -291,9 +291,6 @@ $social-layout: smart
 
 
 */
-@font-face {
-  font-family: "chunkyfive";
-  src: url('../fonts/fonts/chunkyfile-webfont.ttf') format('truetype'), url('../fonts/chunkyfile-webfont.woff') format('woff'), url('../fonts/chunkyfile-webfont.ttf') format('truetype'), url('../fonts/chunkyfile-webfont.svg') format('svg'), url('../fonts/chunkyfile-webfont.eot') format('embedded-opentype'); }
 /* line 96, ../sass/_compass-mixins.scss */
 .border-radius {
   -moz-border-radius: 10px;
@@ -425,45 +422,45 @@ html {
   font-size: 100%;
   line-height: 1.5em; }
 
-/* line 170, ../sass/_compass-mixins.scss */
+/* line 171, ../sass/_compass-mixins.scss */
 .leader {
   margin-top: 1.5em; }
 
-/* line 174, ../sass/_compass-mixins.scss */
+/* line 175, ../sass/_compass-mixins.scss */
 .trailer {
   margin-bottom: 1.5em; }
 
-/* line 177, ../sass/_compass-mixins.scss */
+/* line 178, ../sass/_compass-mixins.scss */
 .trailer-border {
   margin-bottom: 1.5em;
   border-bottom-width: 0.0625em;
   border-bottom-style: solid;
   padding-bottom: 1.4375em; }
 
-/* line 180, ../sass/_compass-mixins.scss */
+/* line 181, ../sass/_compass-mixins.scss */
 .large-text {
   font-size: 1.25em;
   line-height: 1.2em; }
 
-/* line 184, ../sass/_compass-mixins.scss */
+/* line 185, ../sass/_compass-mixins.scss */
 .hide-text {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize; }
 
-/* line 187, ../sass/_compass-mixins.scss */
+/* line 188, ../sass/_compass-mixins.scss */
 .squish-text {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent; }
 
-/* line 190, ../sass/_compass-mixins.scss */
+/* line 191, ../sass/_compass-mixins.scss */
 .contrasted {
   background-color: black;
   color: white; }
 
-/* line 193, ../sass/_compass-mixins.scss */
+/* line 194, ../sass/_compass-mixins.scss */
 .wrap {
   white-space: pre;
   white-space: pre-wrap;
@@ -474,7 +471,7 @@ html {
   white-space: -hp-pre-wrap;
   word-wrap: break-word; }
 
-/* line 200, ../sass/_compass-mixins.scss */
+/* line 201, ../sass/_compass-mixins.scss */
 ul.social-links li {
   margin: 0;
   padding: 0;
@@ -500,14 +497,27 @@ ul.social-links li {
     ul.social-links li li.last {
       padding-right: 0; }
 
-/* line 201, ../sass/_compass-mixins.scss */
+/* line 202, ../sass/_compass-mixins.scss */
 ul.social-links li {
   list-style: none; }
-  /* line 203, ../sass/_compass-mixins.scss */
+  /* line 204, ../sass/_compass-mixins.scss */
   ul.social-links li a {
     display: block;
     width: 30px;
     height: 30px; }
+
+/* line 209, ../sass/_compass-mixins.scss */
+.icon-fix {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url('../images/social/facebook_1.png?1286916196');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 256px;
+  height: 256px;
+  display: block; }
 
 /* line 80, social/*.png */
 .social-sprite, .social-facebook_1, .social-facebook_2_hover, .social-facebook_3, .social-facebook_4, .social-facebook_5, .facebook {
@@ -534,29 +544,29 @@ ul.social-links li {
 .social-facebook_5 {
   background-position: 0 0; }
 
-/* line 238, ../sass/_compass-mixins.scss */
+/* line 245, ../sass/_compass-mixins.scss */
 .facebook {
   background-position: 0 -128px; }
 
-/* line 245, ../sass/_compass-mixins.scss */
+/* line 252, ../sass/_compass-mixins.scss */
 .two-column {
   -moz-column-count: 2;
   -webkit-column-count: 2;
   column-count: 2; }
 
-/* line 246, ../sass/_compass-mixins.scss */
+/* line 253, ../sass/_compass-mixins.scss */
 .three-column {
   -moz-column-count: 3;
   -webkit-column-count: 3;
   column-count: 3; }
 
-/* line 247, ../sass/_compass-mixins.scss */
+/* line 254, ../sass/_compass-mixins.scss */
 .four-column {
   -moz-column-count: 4;
   -webkit-column-count: 4;
   column-count: 4; }
 
-/* line 249, ../sass/_compass-mixins.scss */
+/* line 256, ../sass/_compass-mixins.scss */
 .four-column-with-rule {
   -moz-column-count: 4;
   -webkit-column-count: 4;
@@ -565,43 +575,43 @@ ul.social-links li {
   -webkit-column-rule: 1px solid #ededed;
   column-rule: 1px solid #ededed; }
 
-/* line 261, ../sass/_compass-mixins.scss */
+/* line 268, ../sass/_compass-mixins.scss */
 .radial-gradient {
   background-image: -moz-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
   background-image: -webkit-radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px);
   background-image: radial-gradient(45px 45px, #00ffff 10px, #1e90ff 30px); }
 
-/* line 266, ../sass/_compass-mixins.scss */
+/* line 273, ../sass/_compass-mixins.scss */
 .linear-gradient {
   background-image: -moz-linear-gradient(left top, #ffffff, #dddddd);
   background-image: -webkit-linear-gradient(left top, #ffffff, #dddddd);
   background-image: linear-gradient(to right bottom, #ffffff, #dddddd); }
 
-/* line 271, ../sass/_compass-mixins.scss */
+/* line 278, ../sass/_compass-mixins.scss */
 .v-gradient {
   background-image: -moz-linear-gradient(#ffffff, #aaaaaa);
   background-image: -webkit-linear-gradient(#ffffff, #aaaaaa);
   background-image: linear-gradient(#ffffff, #aaaaaa); }
 
-/* line 276, ../sass/_compass-mixins.scss */
+/* line 283, ../sass/_compass-mixins.scss */
 .v-gradient-2 {
   background-image: -moz-linear-gradient(#ffffff, #cccccc, #aaaaaa);
   background-image: -webkit-linear-gradient(#ffffff, #cccccc, #aaaaaa);
   background-image: linear-gradient(#ffffff, #cccccc, #aaaaaa); }
 
-/* line 281, ../sass/_compass-mixins.scss */
+/* line 288, ../sass/_compass-mixins.scss */
 .v-gradient-3 {
   background-image: -moz-linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa);
   background-image: -webkit-linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa);
   background-image: linear-gradient(#ffffff, #cccccc 30%, #bbbbbb 70%, #aaaaaa); }
 
-/* line 286, ../sass/_compass-mixins.scss */
+/* line 293, ../sass/_compass-mixins.scss */
 .h-gradient {
   background-image: -moz-linear-gradient(left, #ffffff, #dddddd);
   background-image: -webkit-linear-gradient(left, #ffffff, #dddddd);
   background-image: linear-gradient(to right, #ffffff, #dddddd); }
 
-/* line 290, ../sass/_compass-mixins.scss */
+/* line 297, ../sass/_compass-mixins.scss */
 .svg-gradient {
   background-image: -moz-linear-gradient(left, #2ac363, #cd8c14, #9c4cc2);
   background-image: -webkit-linear-gradient(left, #2ac363, #cd8c14, #9c4cc2);
